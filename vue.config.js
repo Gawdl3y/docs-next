@@ -68,6 +68,10 @@ module.exports = {
     }
   },
   configureWebpack: {
+    output: {
+      filename: '[name].[id].js',
+      chunkFilename: '[name].[id].js',
+    },
     optimization: {
       splitChunks: {
         chunks: 'all',
